@@ -1,0 +1,31 @@
+/**
+ *	Style: Paint
+ * 	Creates the default paint tags
+ */
+
+@if($style_include_paint) { 
+	@include paint(alpha) 	{ background-color: $color_alpha; }
+	@include paint(beta) 	{ background-color: $color_beta; }
+	@include paint(gamma) 	{ background-color: $color_gamma;  }
+	@include paint(delta) 	{ background-color: $color_delta; }
+	@include paint(epsilon) { background-color: $color_epsilon; }
+	@include paint(zeta) 	{ background-color: $color_zeta; }
+	@include paint(eta) 	{ background-color: $color_eta; }
+	@include paint(theta) 	{ background-color: $color_theta; }
+	@include paint(iota) 	{ background-color: $color_iota; }
+	@include paint(kappa) 	{ background-color: $color_kappa; }
+	@include paint(lambda) 	{ background-color: $color_lambda; }
+	@include paint(mu) 		{ background-color: $color_mu; }
+	@include paint(nu) 		{ background-color: $color_nu; }
+	@include paint(xi) 		{ background-color: $color_xi; }
+	@include paint(omicron) { background-color: $color_omicron; }
+	@include paint(pi) 		{ background-color: $color_pi; }
+	@include paint(rho) 	{ background-color: $color_rho; }
+	@include paint(sigma) 	{ background-color: $color_sigma; }
+	@include paint(tau) 	{ background-color: $color_tau; }
+	@include paint(upsilon) { background-color: $color_upsilon; }
+	@include paint(phi) 	{ background-color: $color_phi; }
+	@include paint(chi) 	{ background-color: $color_chi; }
+	@include paint(psi) 	{ background-color: $color_psi; }
+	@include paint(omega) 	{ background-color: $color_omega; }
+}

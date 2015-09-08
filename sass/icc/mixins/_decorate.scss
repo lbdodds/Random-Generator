@@ -1,0 +1,22 @@
+/**
+ *	Mixin: decorate
+ *	Decorates a selector from a map
+ */
+@mixin decorate($selector, $map) {
+ 	#{$selector} {
+ 		content: 		'#{$selector}';
+		font-style: 	map-get($map, fontStyle);
+		font-variant: 	map-get($map, fontVariant);
+		font-weight: 	map-get($map, fontWeight);
+		font-stretch:   map-get($map, fontStretch);
+		font-size: 		map-get($map, fontSize);
+		line-height: 	map-get($map, lineHeight);
+		font-family:    map-get($map, fontFamily);
+
+		color: 			map-get($map, color);
+		text-decoration: map-get($map, textDecoration);
+
+		margin: 		map-get($map, margin);
+		padding: 		map-get($map, padding);
+ 	}
+}

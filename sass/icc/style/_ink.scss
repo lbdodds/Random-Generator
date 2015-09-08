@@ -1,0 +1,30 @@
+/**
+ *	Style: Ink
+ * 	Creating the default ink tags
+ */
+@if($style_include_ink) { 
+	@include ink(alpha) 	{ color: $color_alpha; }
+	@include ink(beta) 	{ color: $color_beta; }
+	@include ink(gamma) 	{ color: $color_gamma;  }
+	@include ink(delta) 	{ color: $color_delta; }
+	@include ink(epsilon) { color: $color_epsilon; }
+	@include ink(zeta) 	{ color: $color_zeta; }
+	@include ink(eta) 	{ color: $color_eta; }
+	@include ink(theta) 	{ color: $color_theta; }
+	@include ink(iota) 	{ color: $color_iota; }
+	@include ink(kappa) 	{ color: $color_kappa; }
+	@include ink(lambda) 	{ color: $color_lambda; }
+	@include ink(mu) 		{ color: $color_mu; }
+	@include ink(nu) 		{ color: $color_nu; }
+	@include ink(xi) 		{ color: $color_xi; }
+	@include ink(omicron) { color: $color_omicron; }
+	@include ink(pi) 		{ color: $color_pi; }
+	@include ink(rho) 	{ color: $color_rho; }
+	@include ink(sigma) 	{ color: $color_sigma; }
+	@include ink(tau) 	{ color: $color_tau; }
+	@include ink(upsilon) { color: $color_upsilon; }
+	@include ink(phi) 	{ color: $color_phi; }
+	@include ink(chi) 	{ color: $color_chi; }
+	@include ink(psi) 	{ color: $color_psi; }
+	@include ink(omega) 	{ color: $color_omega; }
+}

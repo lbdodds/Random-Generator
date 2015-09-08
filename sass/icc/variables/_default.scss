@@ -1,0 +1,127 @@
+// Default Variables
+// ...
+
+// Colours
+$color_alpha: 									rgba( 44,  62,  80, 1) 	!default;
+$color_beta : 									rgba(231,  76,  60, 1) 	!default;
+$color_gamma: 									rgba(236, 240, 241, 1) 	!default;
+$color_delta: 									rgba( 52, 152, 219, 1) 	!default;
+$color_epsilon: 								rgba( 41, 128, 185, 1) 	!default;
+$color_zeta: 									rgba(175, 163, 140, 1) 	!default;
+$color_eta : 									rgba(102, 105, 124, 1) 	!default;
+$color_theta: 									rgba( 80,  80,  80, 1) 	!default;
+$color_iota: 									rgba( 90,  90,  90, 1) 	!default;
+$color_kappa: 									rgba(100, 100, 100, 1) 	!default;
+$color_lambda: 									rgba(110, 110, 110, 1) 	!default;
+$color_mu: 										rgba(120, 120, 120, 1) 	!default;
+$color_nu: 										rgba(130, 130, 130, 1) 	!default;
+$color_xi: 										rgba(140, 140, 140, 1) 	!default;
+$color_omicron: 								rgba(150, 150, 150, 1) 	!default;
+$color_pi: 										rgba(160, 160, 160, 1) 	!default;
+$color_rho: 									rgba(170, 170, 170, 1) 	!default;
+$color_sigma: 									rgba(180, 180, 180, 1) 	!default;
+$color_tau: 									rgba(190, 190, 190, 1) 	!default;
+$color_upsilon: 								rgba(200, 200, 200, 1) 	!default;
+$color_phi: 									rgba(210, 210, 210, 1) 	!default;
+$color_chi: 									rgba( 52, 152, 219, 1) 	!default;
+$color_psi: 									rgba(  0,   0,   0, 1) 	!default;
+$color_omega: 									rgba(255, 255, 255, 1) 	!default;
+
+// ...
+$default_padding:								15px					!default;
+
+// Widths
+$bp_xs: 										480px					!default;
+$bp_sm:											768px					!default;
+$bp_md:											960px					!default;
+$bp_lg:											1200px					!default;
+
+
+// Text
+$text_fontFamily: 								"Open Sans" sans-serif  !default;
+	
+$h1_fontSize: 									32px  					!default;
+$h1_lineHeight: 								1.5   					!default;
+$h1_fontWeight: 								bold  					!default;
+$h1_margin: 									0px 0px 15px 0px  		!default;
+$h1_padding: 									0px 	 				!default;
+	
+$h2_fontSize: 									24px  					!default;
+$h2_lineHeight: 								1.5  					!default;
+$h2_fontWeight: 								bold  					!default;
+$h2_margin: 									0px 0px 15px 0px  		!default;
+$h2_padding: 									0px		  				!default;
+	
+$h3_fontSize: 									20px  					!default;
+$h3_lineHeight: 								1.5  					!default;
+$h3_fontWeight: 								bold  					!default;
+$h3_margin: 									0px 0px 15px 0px  		!default;
+$h3_padding: 									0px		  				!default;
+	
+$h4_fontSize: 									18px  					!default;
+$h4_lineHeight: 								1.5  					!default;
+$h4_fontWeight: 								bold  					!default;
+$h4_margin: 									0px 0px 15px 0px  		!default;
+$h4_padding: 									0px 	 				!default;
+	
+$p_fontSize: 									18px  					!default;
+$p_lineHeight: 									1.5  					!default;
+$p_fontWeight: 									inherit  				!default;
+$p_margin: 										0px 0px 15px 0px  		!default;
+$p_padding: 									inherit  				!default;
+	
+$a_color: 										$color_epsilon			!default;
+$a_textDecoration: 								none  					!default;
+
+// Breakpoints Mixin Default  !defaults
+$breakpoints_MaxWidthCollapse_collapseDefault: 	100%  					!default;
+
+// Style Includes
+$style_include_clearfix:						true					!default;
+$style_include_content: 						true					!default;
+$style_include_ink:								true					!default;
+$style_include_paint:							true					!default;
+$style_include_text:							true					!default;
+$style_include_centralColumn:					true 					!default;
+
+// Third Party Includes
+$thirdParty_include_writ:						false					!default;
+$thirdParty_include_bootstrap:					false					!default;
+
+$thirdParty_include_bootstrap_normalize:					true 					!default;
+$thirdParty_include_bootstrap_print:						true 					!default;
+$thirdParty_include_bootstrap_glyphicons:					true 					!default;
+$thirdParty_include_bootstrap_scaffolding:					true 					!default;
+$thirdParty_include_bootstrap_type:							true 					!default;
+$thirdParty_include_bootstrap_code:							true 					!default;
+$thirdParty_include_bootstrap_grid:							true 					!default;
+$thirdParty_include_bootstrap_tables:						true 					!default;
+$thirdParty_include_bootstrap_forms:						true 					!default;
+$thirdParty_include_bootstrap_buttons:						true 					!default;
+$thirdParty_include_bootstrap_componentAnimations:			true 					!default;
+$thirdParty_include_bootstrap_dropdowns:					true 					!default;
+$thirdParty_include_bootstrap_buttonGroups:					true 					!default;
+$thirdParty_include_bootstrap_inputGroups:					true 					!default;
+$thirdParty_include_bootstrap_navs:							true 					!default;
+$thirdParty_include_bootstrap_navbar:						true 					!default;
+$thirdParty_include_bootstrap_breadcrumbs:					true 					!default;
+$thirdParty_include_bootstrap_pagination:					true 					!default;
+$thirdParty_include_bootstrap_pager:						true 					!default;
+$thirdParty_include_bootstrap_labels:						true 					!default;
+$thirdParty_include_bootstrap_badges:						true 					!default;
+$thirdParty_include_bootstrap_jumbotron:					true 					!default;
+$thirdParty_include_bootstrap_thumbnails:					true 					!default;
+$thirdParty_include_bootstrap_alerts:						true 					!default;
+$thirdParty_include_bootstrap_progressBars:					true 					!default;
+$thirdParty_include_bootstrap_media:						true 					!default;
+$thirdParty_include_bootstrap_listGroup:					true 					!default;
+$thirdParty_include_bootstrap_panels:						true 					!default;
+$thirdParty_include_bootstrap_responsiveEmbed:				true 					!default;
+$thirdParty_include_bootstrap_wells:						true 					!default;
+$thirdParty_include_bootstrap_close:						true 					!default;
+$thirdParty_include_bootstrap_modals:						true 					!default;
+$thirdParty_include_bootstrap_tooltip:						true 					!default;
+$thirdParty_include_bootstrap_popovers:						true 					!default;
+$thirdParty_include_bootstrap_carousel:						true 					!default;
+$thirdParty_include_bootstrap_utilities:					true 					!default;
+$thirdParty_include_bootstrap_responsiveUtilities:			true 					!default;

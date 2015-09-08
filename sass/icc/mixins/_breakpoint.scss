@@ -1,0 +1,31 @@
+// Breakpoints for scss
+
+@mixin Breakpoint($min, $max: "") {
+	@if $max != "" {
+		@include Breakpoint-Between($min, $max) {
+			@content
+		}
+	} @else {
+		@include Breakpoint-Max($min) {
+			@content
+		}
+	}
+}
+
+@mixin Breakpoint-Min($min) { @media (min-width: $min) { @content } }
+@mixin Breakpoint-Max($max) { @media (max-width: $max) { @content } }
+@mixin Breakpoint-Between($min, $max) { @media (min-width: $min) and (max-width: $max) { @content } }
+
+/**
+ *	MaxWidthCollapse
+ *	Sets a max-width on the element and also a breakpoint to collapse to a different width when the max width has been hit
+ *	@param $max The maximum width of the element
+ *	@param $collapse The width to collapse to have the max width has been hit
+ */
+@mixin MaxWidthCollapse($max, $collapse: $breakpoints_MaxWidthCollapse_collapseDefault) {
+	max-width: $max;
+	@include Breakpoint($max) {
+		max-width: $collapse;
+		@content
+	}
+}

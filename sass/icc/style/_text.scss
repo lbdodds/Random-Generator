@@ -1,0 +1,93 @@
+/**
+ *	Style: Text
+ *	Creates the default text styles
+ */
+ @if($style_include_text) { 
+	body { 
+		font-family: $text_fontFamily; 
+	}
+
+	$h1Map: ();
+	@if variable-exists(h1_fontSize) 		{ $h1Map: map-merge($h1Map, ( fontSize: 		$h1_fontSize )); }
+	@if variable-exists(h1_fontVariant) 	{ $h1Map: map-merge($h1Map, ( fontVariant: 		$h1_fontVariant )); }
+	@if variable-exists(h1_fontWeight) 		{ $h1Map: map-merge($h1Map, ( fontWeight: 		$h1_fontWeight )); }
+	@if variable-exists(h1_fontStretch) 	{ $h1Map: map-merge($h1Map, ( fontStretch: 		$h1_fontStretch )); }
+	@if variable-exists(h1_fontSize) 		{ $h1Map: map-merge($h1Map, ( fontSize: 		$h1_fontSize )); }
+	@if variable-exists(h1_lineHeight) 		{ $h1Map: map-merge($h1Map, ( lineHeight: 		$h1_lineHeight )); }
+	@if variable-exists(h1_fontFamily) 		{ $h1Map: map-merge($h1Map, ( fontFamily: 		$h1_fontFamily )); }
+	@if variable-exists(h1_textDecoration) 	{ $h1Map: map-merge($h1Map, ( textDecoration: 	$h1_textDecoration )); }
+	@if variable-exists(h1_color) 			{ $h1Map: map-merge($h1Map, ( color: 			$h1_color )); }
+	@if variable-exists(h1_margin) 			{ $h1Map: map-merge($h1Map, ( margin: 			$h1_margin )); }
+	@if variable-exists(h1_padding) 		{ $h1Map: map-merge($h1Map, ( padding: 			$h1_padding )); }
+	@include decorate(h1, $h1Map);
+
+	$h2Map: ();
+	@if variable-exists(h2_fontSize) 		{ $h2Map: map-merge($h2Map, ( fontSize: 		$h2_fontSize )); }
+	@if variable-exists(h2_fontVariant) 	{ $h2Map: map-merge($h2Map, ( fontVariant: 		$h2_fontVariant )); }
+	@if variable-exists(h2_fontWeight) 		{ $h2Map: map-merge($h2Map, ( fontWeight: 		$h2_fontWeight )); }
+	@if variable-exists(h2_fontStretch) 	{ $h2Map: map-merge($h2Map, ( fontStretch: 		$h2_fontStretch )); }
+	@if variable-exists(h2_fontSize) 		{ $h2Map: map-merge($h2Map, ( fontSize: 		$h2_fontSize )); }
+	@if variable-exists(h2_lineHeight) 		{ $h2Map: map-merge($h2Map, ( lineHeight: 		$h2_lineHeight )); }
+	@if variable-exists(h2_fontFamily) 		{ $h2Map: map-merge($h2Map, ( fontFamily: 		$h2_fontFamily )); }
+	@if variable-exists(h2_textDecoration) 	{ $h2Map: map-merge($h2Map, ( textDecoration: 	$h2_textDecoration )); }
+	@if variable-exists(h2_color) 			{ $h2Map: map-merge($h2Map, ( color: 			$h2_color )); }
+	@if variable-exists(h2_margin) 			{ $h2Map: map-merge($h2Map, ( margin: 			$h2_margin )); }
+	@if variable-exists(h2_padding) 		{ $h2Map: map-merge($h2Map, ( padding: 			$h2_padding )); }
+	@include decorate(h2, $h2Map);
+
+	$h3Map: ();
+	@if variable-exists(h3_fontSize) 		{ $h3Map: map-merge($h3Map, ( fontSize: 		$h3_fontSize )); }
+	@if variable-exists(h3_fontVariant) 	{ $h3Map: map-merge($h3Map, ( fontVariant: 		$h3_fontVariant )); }
+	@if variable-exists(h3_fontWeight) 		{ $h3Map: map-merge($h3Map, ( fontWeight: 		$h3_fontWeight )); }
+	@if variable-exists(h3_fontStretch) 	{ $h3Map: map-merge($h3Map, ( fontStretch: 		$h3_fontStretch )); }
+	@if variable-exists(h3_fontSize) 		{ $h3Map: map-merge($h3Map, ( fontSize: 		$h3_fontSize )); }
+	@if variable-exists(h3_lineHeight) 		{ $h3Map: map-merge($h3Map, ( lineHeight: 		$h3_lineHeight )); }
+	@if variable-exists(h3_fontFamily) 		{ $h3Map: map-merge($h3Map, ( fontFamily: 		$h3_fontFamily )); }
+	@if variable-exists(h3_textDecoration) 	{ $h3Map: map-merge($h3Map, ( textDecoration: 	$h3_textDecoration )); }
+	@if variable-exists(h3_color) 			{ $h3Map: map-merge($h3Map, ( color: 			$h3_color )); }
+	@if variable-exists(h3_margin) 			{ $h3Map: map-merge($h3Map, ( margin: 			$h3_margin )); }
+	@if variable-exists(h3_padding) 		{ $h3Map: map-merge($h3Map, ( padding: 			$h3_padding )); }
+	@include decorate(h3, $h3Map);
+
+	$h4Map: ();
+	@if variable-exists(h4_fontSize) 		{ $h4Map: map-merge($h4Map, ( fontSize: 		$h4_fontSize )); }
+	@if variable-exists(h4_fontVariant) 	{ $h4Map: map-merge($h4Map, ( fontVariant: 		$h4_fontVariant )); }
+	@if variable-exists(h4_fontWeight) 		{ $h4Map: map-merge($h4Map, ( fontWeight: 		$h4_fontWeight )); }
+	@if variable-exists(h4_fontStretch) 	{ $h4Map: map-merge($h4Map, ( fontStretch: 		$h4_fontStretch )); }
+	@if variable-exists(h4_fontSize) 		{ $h4Map: map-merge($h4Map, ( fontSize: 		$h4_fontSize )); }
+	@if variable-exists(h4_lineHeight) 		{ $h4Map: map-merge($h4Map, ( lineHeight: 		$h4_lineHeight )); }
+	@if variable-exists(h4_fontFamily) 		{ $h4Map: map-merge($h4Map, ( fontFamily: 		$h4_fontFamily )); }
+	@if variable-exists(h4_textDecoration) 	{ $h4Map: map-merge($h4Map, ( textDecoration: 	$h4_textDecoration )); }
+	@if variable-exists(h4_color) 			{ $h4Map: map-merge($h4Map, ( color: 			$h4_color )); }
+	@if variable-exists(h4_margin) 			{ $h4Map: map-merge($h4Map, ( margin: 			$h4_margin )); }
+	@if variable-exists(h4_padding) 		{ $h4Map: map-merge($h4Map, ( padding: 			$h4_padding )); }
+	@include decorate(h4, $h4Map);
+
+	$pMap: ();
+	@if variable-exists(p_fontSize) 		{ $pMap: map-merge($pMap, ( fontSize: 			$p_fontSize )); }
+	@if variable-exists(p_fontVariant) 		{ $pMap: map-merge($pMap, ( fontVariant: 		$p_fontVariant )); }
+	@if variable-exists(p_fontWeight) 		{ $pMap: map-merge($pMap, ( fontWeight: 		$p_fontWeight )); }
+	@if variable-exists(p_fontStretch) 		{ $pMap: map-merge($pMap, ( fontStretch: 		$p_fontStretch )); }
+	@if variable-exists(p_fontSize) 		{ $pMap: map-merge($pMap, ( fontSize: 			$p_fontSize )); }
+	@if variable-exists(p_lineHeight) 		{ $pMap: map-merge($pMap, ( lineHeight: 		$p_lineHeight )); }
+	@if variable-exists(p_fontFamily) 		{ $pMap: map-merge($pMap, ( fontFamily: 		$p_fontFamily )); }
+	@if variable-exists(p_textDecoration) 	{ $pMap: map-merge($pMap, ( textDecoration: 	$p_textDecoration )); }
+	@if variable-exists(p_color) 			{ $pMap: map-merge($pMap, ( color: 				$p_color )); }
+	@if variable-exists(p_margin) 			{ $pMap: map-merge($pMap, ( margin: 			$p_margin )); }
+	@if variable-exists(p_padding) 			{ $pMap: map-merge($pMap, ( padding: 			$p_padding )); }
+	@include decorate(p, $pMap);
+
+	$aMap: ();
+	@if variable-exists(a_fontSize) 		{ $aMap: map-merge($aMap, ( fontSize: 			$a_fontSize )); }
+	@if variable-exists(a_fontVariant) 		{ $aMap: map-merge($aMap, ( fontVariant: 		$a_fontVariant )); }
+	@if variable-exists(a_fontWeight) 		{ $aMap: map-merge($aMap, ( fontWeight: 		$a_fontWeight )); }
+	@if variable-exists(a_fontStretch) 		{ $aMap: map-merge($aMap, ( fontStretch: 		$a_fontStretch )); }
+	@if variable-exists(a_fontSize) 		{ $aMap: map-merge($aMap, ( fontSize: 			$a_fontSize )); }
+	@if variable-exists(a_lineHeight) 		{ $aMap: map-merge($aMap, ( lineHeight: 		$a_lineHeight )); }
+	@if variable-exists(a_fontFamily) 		{ $aMap: map-merge($aMap, ( fontFamily: 		$a_fontFamily )); }
+	@if variable-exists(a_textDecoration) 	{ $aMap: map-merge($aMap, ( textDecoration: 	$a_textDecoration )); }
+	@if variable-exists(a_color) 			{ $aMap: map-merge($aMap, ( color: 				$a_color )); }
+	@if variable-exists(a_margin) 			{ $aMap: map-merge($aMap, ( margin: 			$a_margin )); }
+	@if variable-exists(a_padding) 			{ $aMap: map-merge($aMap, ( padding: 			$a_padding )); }
+	@include decorate(a, $aMap);
+}

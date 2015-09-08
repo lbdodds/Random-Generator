@@ -1,0 +1,100 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import 'icc/icc';
+@import 'icc/style';
+@import 'icc/third-party';
+
+.version { content: '44'; }
+
+@include tweak(center) { text-align: center; }
+@include tweak(smaller) { font-size: 75%; }
+@include tweak(above-heading) {
+	padding-bottom: 0;
+    margin-bottom: -15px;
+    color: $color_gamma;
+}
+
+@include component(hidden) { display: none !important; }
+
+@include location(header) {
+	color: $color_delta;
+}
+
+@include location(navigation) {
+	a {
+		&:hover {
+			background-color: $color_beta;
+		}
+		
+		display: inline-block;
+
+		padding: {
+			left: $default_padding;
+			right: $default_padding;
+		}
+	}
+	ul li {
+		float: left;
+		line-height: 2;
+	}
+}
+
+
+$section_border_bottom: 3px $color_epsilon solid;
+$section_checkered_odd_background: $color_alpha;
+$section_checkered_odd_foreground: $color_beta;
+$section_checkered_even_background: $color_beta;
+$section_checkered_even_foreground: $color_alpha;
+@include component(section) {
+	@include part(centered) {
+		@include CentralColumn;
+
+		@include option(vertical) {
+			  position: relative;
+			  top: 50%;
+			  -webkit-transform: translateY(-50%);
+			  -ms-transform: translateY(-50%);
+			  transform: translateY(-50%);
+		}
+
+		@include option(paddingless) {
+			padding: 0px;
+		}
+	}
+
+	@include option(borderless) { border-bottom: none; }
+	@include option(keep-border) {
+		&:last-of-type { border-bottom: $section_border_bottom; }
+	}
+	@include option(full) {
+		height: 100%;
+		width: 100%;
+	}
+	@include option(checkered) {
+		&:nth-child(2n-1) {
+			background-color: $section_checkered_odd_background;
+			color: $section_checkered_odd_foreground;
+		}
+		&:nth-child(2n) {
+			background-color: $section_checkered_even_background;
+			color: $section_checkered_even_foreground;
+		}
+	}
+
+
+	border-bottom: $section_border_bottom;
+	&:last-of-type { border-bottom: none; }
+}
+
+@include component(snippet) {
+	padding: $default_padding;
+	background-color: $color_theta;
+	border: {
+		top: 1px $color_epsilon dashed;
+		bottom: 1px $color_epsilon dashed;
+	}	
+}

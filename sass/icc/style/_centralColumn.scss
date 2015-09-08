@@ -1,0 +1,18 @@
+/**
+ *	Style: Central Column
+ *	Creates a definition for a central column and a mixin (CentralColumn)
+ *		@variable	$style_centralColumn_width	$bp_md	...
+ */
+
+$style_centralColumn_width:	$bp_md !default;
+@mixin CentralColumn($width: $style_centralColumn_width) {
+	@include MaxWidthCollapse($width);
+	padding: $default_padding;
+	margin: 0 auto;
+}
+
+@if($style_include_centralColumn) { 
+	.column.central {
+		@include CentralColumn;	
+	}
+}
